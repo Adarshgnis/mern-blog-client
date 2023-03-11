@@ -6,8 +6,13 @@
   }
   
   .texts h2{
-    margin: 0;  
+    margin: 0; 
     font-size: 1.8rem;
+  }
+
+  .texts a{
+    text-decoration: none; 
+    color: inherit;
   }
   
   .info{
