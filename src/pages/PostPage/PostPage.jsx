@@ -18,7 +18,7 @@ const PostPage = () => {
     return (
     <div className="post-page">
       <div className="image">
-        <img src={`http://localhost:4000/${postInfo.cover}`} alt=""/>
+        <img src={`https://backendapi-sbss.onrender.com/${postInfo.cover}`} alt=""/>
       </div>
       <h1>{postInfo.title}</h1>
       {/* {postInfo.content} */}
