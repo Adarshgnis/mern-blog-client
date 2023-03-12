@@ -8,7 +8,7 @@ const Navbar = () => {
   const {setUserInfo,userInfo} = useContext(UserContext)
 
   useEffect(() => {
-    fetch('https://backendapi-sbss.onrender.com/profile', {
+    fetch('/profile', {
       credentials: 'include',
     }).then(response => {
       response.json().then(userInfo => {
