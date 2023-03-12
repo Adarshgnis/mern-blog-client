@@ -9,6 +9,7 @@ const Home = () => {
   useEffect(() => {
     fetch('https://backendapi-sbss.onrender.com/post').then(response => {
       response.json().then(posts => {
+        console.log(posts)
         setPosts(posts)
       })
     })
