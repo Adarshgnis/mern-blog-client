@@ -8,7 +8,7 @@ const Register = () => {
   async function register(ev) {
     ev.preventDefault()
     //now we need to send a POST request so let's use fetch
-    const response = await fetch('https://backendapi-sbss.onrender.com/register', {
+    const response = await fetch('http://localhost:4000/register', {
       method: 'POST',
       body: JSON.stringify({username,password}),
       //because this is a JSON we need to send some headers
