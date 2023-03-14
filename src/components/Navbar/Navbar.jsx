@@ -8,13 +8,16 @@ const Navbar = () => {
   const {setUserInfo,userInfo} = useContext(UserContext)
 
   useEffect(() => {
-    fetch('https://backendapi-sbss.onrender.com/profile', {
-      credentials: 'include',
-    }).then(response => {
-      response.json().then(userInfo => {
-        setUserInfo(userInfo);
+    const abc = async () => {
+      await fetch('https://backendapi-sbss.onrender.com/profile', {
+        credentials: 'include',
+      }).then(response => {
+        response.json().then(userInfo => {
+          setUserInfo(userInfo);
+        });
       });
-    });
+    }
+    abc()
   },[]);
 
   function logout() {
